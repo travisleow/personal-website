@@ -13,6 +13,9 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      gradients: {
+        'text-gradient': 'bg-gradient-to-r from-[#8ab4f8] to-[#c1a8e2] text-transparent bg-clip-text',
+      },
     },
   },
   plugins: [],
