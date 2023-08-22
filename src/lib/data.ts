@@ -77,7 +77,7 @@ export const projectsData = [
     {
         title: "PracticeMe",
         description:
-            "A realtime, gamified web app used by students in Singapore Polytechnic practice their javascript skills.",
+            "A realtime, gamified web app used by students in Singapore Polytechnic to practice their Javascript skills.",
         date: "17 April 2023",
         tags: ["Next.js", "TypeScript", "MongoDB", "Tailwind", "tRPC"],
         imageUrl: practiceMeImg,

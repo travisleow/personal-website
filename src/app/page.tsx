@@ -14,6 +14,7 @@ import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
+import ParticlesContainer from "@/components/ParticlesContainer";
 
 export default function Home() {
     const [isLoaded] = useAtom(isLoadedAtom);
@@ -27,6 +28,7 @@ export default function Home() {
         >
             <main className={`flex flex-col items-center px-4`}>
                 {/* <PreLoader /> */}
+                <ParticlesContainer />
                 <Header />
                 <Intro />
                 <Divider />

@@ -9,7 +9,8 @@ import "react-vertical-timeline-component/style.min.css";
 import { experiencesData } from "@/lib/data";
 
 function Experience() {
-    const { ref } = useSectionInView("Home", 0.5);
+    const { ref } = useSectionInView("Experience");
+    
     return (
         <section ref={ref} id="experience" className="mb-28">
             <SectionHeading>My Experience</SectionHeading>
