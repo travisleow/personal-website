@@ -7,7 +7,7 @@ import SubmitBtn from "./SubmitBtn";
 import toast from "react-hot-toast";
 
 function Contact() {
-    const { ref } = useSectionInView("Experience");
+    const { ref } = useSectionInView("Contact");
 
     return (
         <motion.section
@@ -29,7 +29,7 @@ function Contact() {
         >
             <SectionHeading>Contact Me</SectionHeading>
 
-            <p className="text-gray-700 -mt-6">
+            <p className="text-gray-700 -mt-6 dark:text-white/80">
                 Contact me directly at{" "}
                 <a className="underline" href="mailto:travis05leow@gmail.com">
                     travis05leow@gmail.com
@@ -47,19 +47,19 @@ function Contact() {
 
                     toast.success("Message sent successfully!");
                 }}
-                className="flex flex-col mt-10"
+                className="flex flex-col mt-10 dark:text-black/80"
             >
                 <input
                     type="email"
                     name="senderEmail"
-                    className="h-14 px-4 rounded-lg border border-black/10"
+                    className="h-14 px-4 rounded-lg border border-black/10 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
                     placeholder="Your Email"
                     required
                     maxLength={500}
                 />
                 <textarea
                     name="message"
-                    className="h-52 my-3 rounded-lg border-black/10 p-4"
+                    className="h-52 my-3 rounded-lg border-black/10 p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
                     placeholder="Your Message"
                     required
                     maxLength={500}
