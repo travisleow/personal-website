@@ -17,9 +17,9 @@ function About() {
         >
             <SectionHeading>About me</SectionHeading>
             <p className="mb-3">
-                After enrolling in Singapore Polytechnic's <span className="font-medium">Information Technology</span> Course{" "}
+                After enrolling in Singapore Polytechnic&apos;s <span className="font-medium">Information Technology</span> Course{" "}
                 , I decided to
-                pursue my passion for programming. Since I was 8 years old, I've been intrigued and interested in computers.
+                pursue my passion for programming. Since I was 8 years old, I&apos;ve been intrigued and interested in computers.
                 I enrolled in a coding
                 bootcamp and learned{" "}
                 <span className="font-medium">full-stack web development</span>.{" "}
@@ -35,7 +35,7 @@ function About() {
             </p>
 
             <p>
-                <span className="italic">When I'm not coding</span>, I enjoy
+                <span className="italic">When I&apos;m not coding</span>, I enjoy
                 playing video games, watching movies, and playing with my balisong. I
                 also enjoy{" "}
                 <span className="font-medium">learning new things</span>. I am

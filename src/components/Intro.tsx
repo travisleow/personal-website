@@ -55,7 +55,7 @@ export default function Intro() {
                         delay: 1,
                     }}
                 >
-                    Hello, I'm <Gradient>Travis</Gradient>.
+                    Hello, I&apos;m <Gradient>Travis</Gradient>.
                 </motion.span>
                 {" "}
                 {"I'm a full-stack developer currently pursuing a Diploma in Information Technology. I enjoy building sites & apps. My focus is React (Next.js)."

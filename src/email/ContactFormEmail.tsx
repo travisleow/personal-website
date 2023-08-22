@@ -31,7 +31,7 @@ function ContactFormEmail({ message, senderEmail }: ContactFormEmailProps) {
                             </Heading>
                             <Text>{message}</Text>
                             <Hr />
-                            <Text>Sender's email: {senderEmail}</Text>
+                            <Text>Sender&apos;s email: {senderEmail}</Text>
                         </Section>
                     </Container>
                 </Body>
