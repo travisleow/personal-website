@@ -9,9 +9,13 @@ import { FaGithubSquare } from "react-icons/fa";
 import ComputersCanvas from "@/components/canvas/Computer";
 import Gradient from "@/components/Gradient";
 import { useSectionInView } from "@/hooks/useSectionInView";
+import { activeSectionAtom, timeOfLastClickAtom } from "@/lib/atoms";
+import { useAtom } from "jotai";
 
 export default function Intro() {
     const { ref } = useSectionInView("Home", 0.5);
+    const [activeSection, setActiveSection] = useAtom(activeSectionAtom);
+    const [timeOfLastClick, setTimeOfLastClick] = useAtom(timeOfLastClickAtom);
 
     return (
         <section
@@ -96,6 +100,10 @@ export default function Intro() {
                 <Link
                     href="#contact"
                     className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+                    onClick={() => {
+                        setActiveSection("Contact");
+                        setTimeOfLastClick(Date.now());
+                    }}
                 >
                     Contact me here{" "}
                     <BsArrowRight className="opacity-70 group-hover:translate-x-1 group-hover:opacity-100 transition" />
@@ -109,7 +117,7 @@ export default function Intro() {
                     <HiDownload className="opacity-80 group-hover:translate-y-1 hover:opacity-100 transition" />
                 </a>
                 <a
-                    href=""
+                    href="https://github.com/travisleow"
                     className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition border border-black/10"
                     target="_blank"
                 >

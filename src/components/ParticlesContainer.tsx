@@ -52,10 +52,10 @@ function ParticlesContainer() {
                 },
                 particles: {
                     color: {
-                        value: "rgba(0, 0, 0, 0.5)",
+                        value: "#bebebe",
                     },
                     links: {
-                        color: "#444444",
+                        color: "#d3d3d3",
                         distance: 150,
                         enable: true,
                         opacity: 0.5,

@@ -15,6 +15,7 @@ import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
 import ParticlesContainer from "@/components/ParticlesContainer";
+import Contact from "@/components/Contact";
 
 export default function Home() {
     const [isLoaded] = useAtom(isLoadedAtom);
@@ -36,6 +37,7 @@ export default function Home() {
                 <Projects />
                 <Skills />
                 <Experience />
+                <Contact />
                 <Footer />
             </main>
         </motion.div>
