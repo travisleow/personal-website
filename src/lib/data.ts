@@ -72,7 +72,7 @@ export const projectsData = [
         date: "22 August 2023",
         tags: ["Next.js", "TypeScript", "Tailwind", "Framer Motion", "Three.js"],
         imageUrl: currentPortfolioImg,
-        websiteUrl: "https://socpracticeme.vercel.app",
+        websiteUrl: "#",
     },
     {
         title: "PracticeMe",
@@ -108,7 +108,7 @@ export const projectsData = [
         date: "7 August 2022",
         tags: ["HTML", "CSS", "Javascript", "Bootstrap"],
         imageUrl: oldPortfolioImg,
-        websiteUrl: "https://travisleow.works",
+        websiteUrl: "https://bootstrap.travisleow.works",
     },
 ] as const;
 
