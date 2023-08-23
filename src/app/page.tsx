@@ -3,7 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useAtom } from "jotai";
-import { isLoadedAtom } from "@/lib/atoms";
+import { computerLoadedAtom } from "@/lib/atoms";
 
 import Divider from "@/components/Divider";
 import Header from "@/components/Header";
@@ -18,7 +18,7 @@ import ParticlesContainer from "@/components/ParticlesContainer";
 import Contact from "@/components/Contact";
 
 export default function Home() {
-    const [isLoaded] = useAtom(isLoadedAtom);
+    const [computerLoaded] = useAtom(computerLoadedAtom);
 
     return (
         <motion.div
@@ -28,7 +28,7 @@ export default function Home() {
             transition={{ duration: 0.5 }}
         >
             <main className={`flex flex-col items-center px-4`}>
-                {/* <PreLoader /> */}
+                <PreLoader />
                 <ParticlesContainer />
                 <Header />
                 <Intro />
