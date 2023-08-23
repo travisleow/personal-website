@@ -3,7 +3,7 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { useGLTF, OrbitControls, Preload, useProgress } from "@react-three/drei";
 
 const Computers = () => {
-    const computer = useGLTF("./pc_model/scene.gltf");
+    const computer = useGLTF("./pc_model/scene-draco.gltf");
 
     const [rotation, setRotation] = useState(0);
 

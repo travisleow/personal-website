@@ -127,6 +127,7 @@ export default function Intro() {
                             href="https://www.linkedin.com/in/travis-leow/"
                             className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition border border-black/10 dark:bg-white/10 dark:text-white/60"
                             target="_blank"
+                            aria-label="LinkedIn"
                         >
                             <BsLinkedin />
                         </a>
@@ -134,6 +135,7 @@ export default function Intro() {
                             href="https://github.com/travisleow"
                             className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition border border-black/10 dark:bg-white/10 dark:text-white/60"
                             target="_blank"
+                            aria-label="Github"
                         >
                             <FaGithubSquare />
                         </a>
@@ -141,6 +143,7 @@ export default function Intro() {
                             href="https://www.youtube.com/channel/UCmOvJ2zEs92kqjCg4ajqbpw"
                             className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition border border-black/10 dark:bg-white/10 dark:text-white/60"
                             target="_blank"
+                            aria-label="Youtube"
                         >
                             <BsYoutube />
                         </a>

@@ -2,8 +2,6 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { useAtom } from "jotai";
-import { computerLoadedAtom } from "@/lib/atoms";
 
 import Divider from "@/components/Divider";
 import Header from "@/components/Header";
@@ -18,7 +16,6 @@ import ParticlesContainer from "@/components/ParticlesContainer";
 import Contact from "@/components/Contact";
 
 export default function Home() {
-    const [computerLoaded] = useAtom(computerLoadedAtom);
 
     return (
         <motion.div

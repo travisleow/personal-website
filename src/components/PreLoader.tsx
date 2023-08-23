@@ -38,7 +38,7 @@ const PreLoader = () => {
                             delay: 0.5,
                         }}
                     >
-                        {progress}%
+                        {progress.toFixed(0)}%
                     </motion.p>
                 </motion.div>
             )}
