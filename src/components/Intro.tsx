@@ -1,18 +1,18 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin, BsYoutube } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import ComputersCanvas from "@/components/canvas/Computer";
-import Gradient from "@/components/Gradient";
 import { useSectionInView } from "@/hooks/useSectionInView";
 import {
     activeSectionAtom,
     timeOfLastClickAtom,
     computerLoadedAtom,
+    themeAtom
 } from "@/lib/atoms";
 import { useAtom } from "jotai";
 
@@ -20,6 +20,7 @@ export default function Intro() {
     const { ref } = useSectionInView("Home", 0.5);
     const [, setActiveSection] = useAtom(activeSectionAtom);
     const [, setTimeOfLastClick] = useAtom(timeOfLastClickAtom);
+    const [theme] = useAtom(themeAtom);
     const [computerLoaded] = useAtom(computerLoadedAtom);
 
     return (
@@ -63,7 +64,7 @@ export default function Intro() {
                                 delay: 1,
                             }}
                         >
-                            Hello, I&apos;m <Gradient>Travis</Gradient>.
+                            Hello, I&apos;m <span className={theme === "light" ? "text-gradient-light" : "text-gradient-dark"}>Travis</span>.
                         </motion.span>{" "}
                         {"I'm a full-stack developer currently pursuing a Diploma in Information Technology. I enjoy building sites & apps. My focus is React (Next.js)."
                             .split(" ")
