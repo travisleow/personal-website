@@ -23,3 +23,14 @@ html.dark {
     background-clip: text;
     -webkit-box-decoration-break: clone;
 }
+
+.custom-cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}

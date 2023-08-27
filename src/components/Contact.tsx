@@ -27,14 +27,20 @@ function Contact() {
                 once: true,
             }}
         >
-            <SectionHeading>Contact Me</SectionHeading>
+            <SectionHeading>Get In Touch</SectionHeading>
 
             <p className="text-gray-700 -mt-6 dark:text-white/80">
-                Contact me directly at{" "}
-                <a className="underline" href="mailto:travis05leow@gmail.com">
-                    travis05leow@gmail.com
-                </a>{" "}
-                or through this form.
+                I'm currently looking for opportunities.{" "}
+                <p>
+                    Contact me directly at{" "}
+                    <a
+                        className="underline"
+                        href="mailto:travis05leow@gmail.com"
+                    >
+                        travis05leow@gmail.com
+                    </a>{" "}
+                    or through this form.
+                </p>
             </p>
 
             <form
