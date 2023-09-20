@@ -42,7 +42,7 @@ export const experiencesData = [
         title: "Secondary School Education (O Levels)",
         location: "Chua Chu Kang Secondary School",
         description:
-            "Graduated from secondary school  with a L1R4 of 13 points. I partook in Badminton CCA and was a member of the school's Infocomm Club.",
+            "Graduated from Chua Chu Kang Secondary School. I partook in Badminton CCA and was a member of the school's Infocomm Club.",
         icon: React.createElement(LuGraduationCap),
         date: "2021",
     },
